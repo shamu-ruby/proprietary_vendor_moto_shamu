@@ -20,6 +20,7 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),shamu)
 
 include $(CLEAR_VARS)
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := motorola
 LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
